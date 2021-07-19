@@ -32,6 +32,9 @@ Configure ESLint with a `.eslintrc` file using the following contents:
 	"extends": "jquery"
 }
 ```
+# disable lint:
+
+The // eslint-disable-line comment disables the no-eval rule for just that line. You can also disable the no-eval rule for an entire function block by using /* eslint-disable */ . If you put /* eslint-disable no-eval */ before any code in a . js file, that will disable the no-eval rule for the entire file
 
 # Downloads
 To download VSCode:
