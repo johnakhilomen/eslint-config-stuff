@@ -8,6 +8,14 @@ In your .eslintrc.json set:
     "amd": true
 },
 ```
+
+# module, global, setImmediate, exports is not defined
+```
+"env": {
+    "node": true
+},
+```
+
 # jQuery eslint config
 ```python
 module.exports = {
