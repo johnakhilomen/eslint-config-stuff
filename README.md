@@ -1,6 +1,13 @@
 # eslint-config-stuff
 ES-Lint config stuff
 
+# define is not defined
+In your .eslintrc.json set:
+```python
+"env": {
+    "amd": true
+},
+```
 # jQuery eslint config
 ```python
 module.exports = {
