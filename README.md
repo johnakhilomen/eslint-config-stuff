@@ -67,3 +67,42 @@ eslint js
 # Fixes
 Change `isPrototypeOf` to `isPrototypeOf.call`
 Change `hasOwnProperty` to `hasOwnProperty.call`
+
+
+## Setting up Eslint for Typescript
+To install ESLint and airbnb plugin
+```python
+npm install --save-dev --save-exact eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb 
+
+// or with yarn:
+yarn add --dev --exact eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb
+
+```
+
+To configure ESLint, you can define the configuration in the .eslintrc.json and would look something like:
+```
+
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error"
+  }
+}
+
+```
+
+Like we did with Prettier, we can define two scripts in package.json to work with ESLint:
+```
+"scripts": {
+  "eslint": "eslint 'src/**/*.ts'",
+  "eslint:fix": "eslint --fix 'src/**/*.ts'"
+}
+```
