@@ -72,10 +72,10 @@ Change `hasOwnProperty` to `hasOwnProperty.call`
 ## Setting up Eslint for Typescript
 To install ESLint and airbnb plugin
 ```python
-npm install --save-dev --save-exact eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb 
+npm install --save-dev eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb 
 
 // or with yarn:
-yarn add --dev --exact eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb
+yarn add --dev eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb
 
 ```
 
